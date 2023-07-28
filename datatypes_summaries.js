@@ -24,7 +24,7 @@ let userEmail;
 
 const id = Symbol('1234')
 const anotherId = Symbol('1234')
-console.log(id === anotherId);
+//console.log(id === anotherId);
 
 //const bigNumber = 3443443443443n
 
@@ -44,6 +44,24 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber);
+//console.log(typeof bigNumber);
 
+// Stack (Primitive) and Heap (Non - Premitive) Memory 
 
+let myYoutubename = "shaikImrandotcom"
+let anotherName = myYoutubename
+anotherName = "Chaiaurcode"
+
+console.log(myYoutubename );
+console.log(anotherName );
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
